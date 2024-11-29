@@ -1,54 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+
+    <link rel="stylesheet" href="/css/info.css">
+    <link rel="stylesheet" href="/css/hobby.css">
+    <link rel="stylesheet" href="/css/work.css">
+    <link rel="stylesheet" href="/css/contact.css">
 </head>
 
-
-<style>
-    .name {
-        font-size: 35px;
-    }
-</style>
 <body>
 
     <section class="resume">
+        <div class="content">
+            <button>Содержание</button>
+        </div>
 
-        <article class="avatar-name">
-            <img src="/avatar.jpg" alt="Здесь будет мое фото" width="300px">
-            <h1 class="name">Романенко Роман</h1>
+        <div class="content-burger">
+            
+        </div>
+        <article class="info">
+            <div class="avatar-name">
+                <!-- <img src="/img/avatarjpg.jpg" alt="Здесь будет мое фото" width="300px"> -->
+            </div>
+            <div class="info-info">
+                <div class="about-me">
+                    <h1 class="name">Романенко Роман</h1>
+                    <p>Я студент 4-го курса <strong>АКВТ</strong> по специальности <strong>СИС Админ</strong></p>
+                    <p>Я люблю <em>гулять, заниматься спортом и программировать</em></p>
+                </div>
+
+                <div class="contact">
+                    <h3 class="list-social">Список социальных сетей</h3>
+                    <div class="list-social-content">
+
+                        <a href="https://t.me/rroman228" target="_blank" class="list-social-content-item">
+                            <span class="icon-image icon-image-tg"></span>
+                            <p>Telegram</p>
+                        </a>
+
+                        <a href="https://rutube.ru/channel/39013926/" target="_blank" class="list-social-content-item">
+                            <span class="icon-image icon-image-rutube"></span>
+                            <p>Rutube</p>
+                        </a>
+
+                        <a href="https://vk.com/dobrblu.fanat" target="_blank" class="list-social-content-item">
+                            <span class="icon-image icon-image-vk"></span>
+                            <p>VK</p>
+                        </a>
+
+                        <a href="https://github.com/wwweb-love" target="_blank" class="list-social-content-item">
+                            <span class="icon-image icon-image-git"></span>
+                            <p>GitHub</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </article>
 
-        <article class="about-me">
-            <p>Я студент 4-го курса <strong>АКВТ</strong> по специальности <strong>СИС Админ</strong></p>
-            <p>Я люблю <em>гулять, заниматься спортом и программировать</em></p>
-        </article>
-
-        <article class="contact">
-            <h3>Список социальных сетей</h3>   
-            <a href="https://t.me/rroman228">Telegram</a> |
-            <a href="https://rutube.ru/channel/39013926/">Rutube</a> |
-            <a href="https://vk.com/dobrblu.fanat">VK</a> 
-        </article>
 
         <article class="hobby-me">
-            <h3>Мои хобби</h3>
+            <h2>Мои хобби</h2>
 
-            <ol>
-                <li>Тренажерный зал</li>
-                <li>Программирование</li>
-                <li>Путешествия</li>
-            </ol>
+            <ul>
+                <li class="sport">
+                    <img class="hobby-me-image" src="/img/ызщке.jpg" alt="">
+                    <p class="hobby-name">Спорт</p>
+                </li>
+
+                <li class="programming">
+                    <img class="hobby-me-image" src="/img/programm.jpg" alt="">
+                    <p class="hobby-name">Кодинг</p>
+                </li>
+
+                <li class="journey">
+                    <img class="hobby-me-image" src="/img/путешествие.jpg" alt="">
+                    <p class="hobby-name">Путешествие</p>
+                </li>
+            </ul>
         </article>
 
         <article class="work-experience">
-            <h3>Опыт работы</h3>
+            <h2>Опыт работы</h2>
 
             <table>
                 <thead>
-                    <th>Компания</th>
+                    <th class="shaddow">Компания</th>
                     <th>Должность</th>
                     <th>Период</th>
                 </thead>
@@ -67,21 +107,23 @@
         </article>
 
         <article class="contact-me">
-            <h3>Связаться со мной</h3>
+            <div class="form-block-1">
+                <h2>Связаться со мной</h2>
+                <img class="form-block-1-image" src="/img/icons8-обратная-рука-указательный-указательный-вправо-эмодзи-48.png" alt="">
+            </div>
             <form>
-                <div>
+                <div class="form-block">
                     <label for="name">Ваше имя: </label>
-                    <input type="text" name="name" placeholder="Введите имя">
+                    <input class="form-name" type="text" name="name" placeholder="Введите имя">
                 </div>
 
-                <div>
+                <div class="form-block">
                     <label for="email">Ваш email: </label>
                     <input type="email" name="email" placeholder="Введите email">
                 </div>
 
-                <div>
+                <div class="form-block">
                     <label for="message">Ваше сообщение: </label>
-                    <br>
                     <textarea placeholder="Введите сообщение..."></textarea>
                     <br>
                     <button type="submit">Отправить</button>
@@ -93,4 +135,5 @@
 
     </section>
 </body>
+
 </html>

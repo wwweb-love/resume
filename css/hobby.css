@@ -1,0 +1,67 @@
+.hobby-me {
+
+    text-align: center;
+    padding: 20px;
+
+    text-align: center;
+}
+
+.hobby-me h2 {
+    margin-left: 10%;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.hobby-me ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    list-style: none;
+}
+
+.hobby-me ul li {
+    position: relative;
+
+    display: block;
+    width: 300px;
+    height: 300px;
+
+    overflow: hidden;
+    transition: all 0.4s;
+
+}
+.hobby-me ul li:hover {
+    cursor: pointer;
+    transition: all 0.4s;
+
+    transform: scale(1.05)
+}
+
+.hobby-me-image {
+    height: 300px;
+    background-size: contain;
+    filter: brightness(50%);
+
+    /* z-index: -1; */
+}
+
+
+
+.hobby-name {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-weight: 300;
+    font-size: 25px;
+    color: white;
+    letter-spacing: 1.6px;
+}
+
+@media (max-width: 1000px) {
+    .hobby-me ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

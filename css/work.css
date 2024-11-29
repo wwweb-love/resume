@@ -1,0 +1,54 @@
+.work-experience {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.work-experience h2 {
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+.work-experience table {
+    width: 100%;
+    gap: 0;
+    border-spacing: 0;
+
+    background-color: rgb(39, 38, 41);
+
+    /* box-shadow: 100px -100px 100px rgb(96, 51, 165); */
+}
+
+td:hover {
+    cursor: pointer;
+    background-color: rgb(67, 66, 70);
+}
+
+th, td {
+    height: 50px;
+}
+
+th {
+    font-weight: 400;
+}
+
+td {
+    padding-left: 20px;
+    font-weight: 100;
+}
+
+.shaddow {
+    box-shadow: 1100px 30px 300px rgb(102, 0, 255);
+}
+
+@media (max-width: 1700px) {
+    .shaddow {
+        box-shadow: 800px 500px 300px rgb(102, 0, 255);
+    }
+}
+
+@media (max-width: 1000px) {
+    .shaddow {
+        box-shadow: 600px 500px 300px rgb(102, 0, 255);
+    }
+}
