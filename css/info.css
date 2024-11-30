@@ -11,7 +11,6 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
     background-color: #1f1f1f;
     color: #fdfdfd;
 }
@@ -156,12 +155,14 @@ a {
 }
 
 .content {
+    z-index: 2;
     position: fixed;
     right: 20px;
     top: 20px;
 }
 
 .content-burger {
+    z-index: 2;
     position: fixed;
     right: 20px;
     top: 20px;
