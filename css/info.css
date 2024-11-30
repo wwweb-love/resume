@@ -49,6 +49,7 @@ a {
 
 
 .resume {
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     gap:200px;
@@ -155,13 +156,13 @@ a {
 }
 
 .content {
-    position: absolute;
+    position: fixed;
     right: 20px;
     top: 20px;
 }
 
 .content-burger {
-    position: absolute;
+    position: fixed;
     right: 20px;
     top: 20px;
 
