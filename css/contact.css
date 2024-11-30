@@ -48,4 +48,8 @@ input, textarea {
     .form-block-1-image {
         display: none;
     }
+
+    input, textarea {
+        width: 100%;
+    }
 }
